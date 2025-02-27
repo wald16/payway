@@ -1,7 +1,7 @@
 const nodemailer = require("nodemailer");
 const fs = require("fs");
 
-const emailHtml = fs.readFileSync("email.html", "utf8");
+const emailHtml = fs.readFileSync("email-animated.html", "utf8");
 
 let transporter = nodemailer.createTransport({
     service: "gmail",
@@ -13,8 +13,8 @@ let transporter = nodemailer.createTransport({
 
 let mailOptions = {
     from: '"Manuel" <manuwald16@gmail.com>',
-    to: "javi.cerruti@gmail.com",
-    subject: "HTML de Manu",
+    to: "gustavowald@gmail.com",
+    subject: "HTML animado de Manu",
     html: emailHtml
 };
 
